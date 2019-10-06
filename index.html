@@ -1,20 +1,66 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
   <head>
     <meta charset="utf-8" />
-    <title>Kimmo Sääskilahti</title>
-    <link
-      href="https://fonts.googleapis.com/css?family=Press+Start+2P"
-      rel="stylesheet"
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"
     />
-    <link href="https://unpkg.com/nes.css/css/nes.min.css" rel="stylesheet" />
-    <link href="styles/index.css" rel="stylesheet" />
+
+    <title>Kimmo Sääskilahti</title>
+    <meta name="description" content="Kimmo Sääskilahti's homepage" />
+
+    <link rel="stylesheet" href="css/reset.css" />
+    <link rel="stylesheet" href="css/reveal.css" />
+    <link rel="stylesheet" href="css/theme/matrix.css" />
+
+    <!-- Theme used for syntax highlighting of code -->
+    <link rel="stylesheet" href="lib/css/monokai.css" />
+
+    <!-- Printing and PDF exports -->
   </head>
   <body>
-    <p>
-      Nothing here yet, see
-      <a href="https://kimmosaaskilahti.fi">kimmosaaskilahti.fi</a> in the mean
-      time.
-    </p>
+    <div class="reveal">
+      <div class="slides">
+        <section id="welcome">
+          <header>
+            <h3>Kimmo Sääskilahti</h3>
+          </header>
+        </section>
+        <section id="who-am-i">
+          <h3>Who am I</h3>
+        </section>
+        <section id="experience">
+          <h3>Work experience</h3>
+        </section>
+        <section id="education">
+          <h3>Education</h3>
+        </section>
+        <section id="acknowledgements">
+          <h3>Acknowledgements</h3>
+        </section>
+      </div>
+    </div>
+
+    <script src="js/reveal.js"></script>
+
+    <script>
+      // More info about config & dependencies:
+      // - https://github.com/hakimel/reveal.js#configuration
+      // - https://github.com/hakimel/reveal.js#dependencies
+      Reveal.initialize({
+        hash: true,
+        transition: "none",
+        dependencies: [
+          { src: "plugin/markdown/marked.js" },
+          { src: "plugin/markdown/markdown.js" },
+          { src: "plugin/notes/notes.js", async: true },
+          { src: "plugin/highlight/highlight.js", async: true },
+
+          // Zoom in and out with Alt+click
+          { src: "plugin/zoom-js/zoom.js", async: true },
+        ],
+      });
+    </script>
   </body>
 </html>
